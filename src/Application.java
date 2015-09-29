@@ -1,5 +1,9 @@
 import java.io.*;
 
+import Decoder.sut.Decoder;
+import java.net.URL;
+import java.net.URLClassLoader;
+
 public class Application {
 
 	public static void main(String[] args) {
@@ -28,7 +32,14 @@ public class Application {
 				e.printStackTrace();
 
 			}
+			 ClassLoader cl = ClassLoader.getSystemClassLoader();
 
+		        URL[] urls = ((URLClassLoader)cl).getURLs();
+
+		        for(URL url: urls){
+		        	System.out.println(url.getFile());
+		        }
+		         
 		}
 
 	}

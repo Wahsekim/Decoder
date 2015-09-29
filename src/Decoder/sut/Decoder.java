@@ -3,6 +3,7 @@
  * @author Mike
  *
  */
+package Decoder.sut;
 public class Decoder {
 	/**
 	 * methode static pour decoder d'un string 
